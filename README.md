@@ -1,6 +1,6 @@
 # Natives – Punkterechner
 
-Ein einfacher Punktezähler für das Brettspiel **Natives**. Geplant sind auch die Erweiterungen "Rituale", "Jahreszeiten" und "Die Seele der Prärie". Funktioniert offline im Browser, Unterstützt auch Mobilgeräte.
+Ein einfacher Fan-Made Punktezähler für das Brettspiel **Natives**. Geplant sind auch die Erweiterungen "Rituale", "Jahreszeiten" und "Die Seele der Prärie". Funktioniert offline im Browser, Unterstützt auch Mobilgeräte.
 
 🌐 [Jetzt ausprobieren](https://yanni-x.github.io/natives-punkterechner/)
 
@@ -28,6 +28,12 @@ Bitte beschreibe im PR:
 - Welche Änderung du vorgenommen hast
 - Warum sie sinnvoll ist
 
+## ℹ️ Rechtlicher Hinweis
+
+Dieses Projekt steht in **keiner Verbindung zu den offiziellen Rechteinhabern** des Spiels **„Natives“**.  
+Es handelt sich um ein rein **inoffizielles Fan-Projekt**, das aus privatem Interesse und ohne kommerzielle Absicht entstanden ist.  
+Alle Rechte an Namen, Regeln und Marken verbleiben bei den jeweiligen Eigentümern.
+
 ## Lizenz
 
-TODO
+[MIT License](LICENSE)
