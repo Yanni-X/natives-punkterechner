@@ -1,119 +1,129 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Natives – Punktzähler</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <title>Natives – Punktzähler</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <main>
-    <h1>Natives – Endpunktzahl-Rechner</h1>
-    <section>
-    <h2>Erweiterungen</h2>
-    <div class="erweiterungen">
-    <div class="checkbox-row">
-        <input type="checkbox" id="erweiterung-rituale" />
-        <label for="erweiterung-rituale">Rituale</label>
-    </div>
-    <div class="checkbox-row">
-        <input type="checkbox" id="erweiterung-jahreszeiten"  />
-        <label for="erweiterung-jahreszeiten">Jahreszeiten (demnächst)</label>
-    </div>
-    <div class="checkbox-row">
-        <input type="checkbox" id="erweiterung-seele"  />
-        <label for="erweiterung-seele">Die Seele der Prärie (demnächst)</label>
-    </div>
-    </div>
+    <main>
+        <h1>Natives – Endpunktzahl-Rechner</h1>
+        <section>
+            <h2>Erweiterungen</h2>
+            <div class="erweiterungen">
+                <div class="checkbox-row">
+                    <input type="checkbox" id="erweiterung-rituale" />
+                    <label for="erweiterung-rituale">Rituale</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="erweiterung-jahreszeiten" />
+                    <label for="erweiterung-jahreszeiten">Jahreszeiten (demnächst)</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="erweiterung-seele" />
+                    <label for="erweiterung-seele">Die Seele der Prärie (demnächst)</label>
+                </div>
+            </div>
 
-    </section>
-    <section>
-      <h2>Stammesmitglieder</h2>
-      <p>Bitte Punkte der Karten jeweils selbst zusammenrechnen.</p>
-      <div class="input-group">
-        <label>Eigene Mitglieder im eigenen Stamm:
-          <input type="number" id="eigene-eigener-stamm" value="0" />
-        </label>
-        <label>Fremde Mitglieder im eigenen Stamm:
-          <input type="number" id="fremde-im-eigenen" value="0" />
-        </label>
-        <label>Eigene Mitglieder im fremden Stamm:
-          <input type="number" id="eigene-in-fremden" value="0" />
-        </label>
-      </div>
-    </section>
+        </section>
+        <section>
+            <h2>Stammesmitglieder</h2>
+            <p>Bitte Punkte der Karten jeweils selbst zusammenrechnen.</p>
+            <div class="input-group">
+                <label>Eigene Mitglieder im eigenen Stamm:
+                    <input type="number" id="eigene-eigener-stamm" value="0" />
+                </label>
+                <label>Fremde Mitglieder im eigenen Stamm:
+                    <input type="number" id="fremde-im-eigenen" value="0" />
+                </label>
+                <label>Eigene Mitglieder im fremden Stamm:
+                    <input type="number" id="eigene-in-fremden" value="0" />
+                </label>
+            </div>
+        </section>
 
-    <section>
-      <h2>Nahrung</h2>
-      <div class="input-group">
-        <label>Mais:
-          <input type="number" id="mais" value="0" />
-        </label>
-        <label>Lachs:
-          <input type="number" id="lachs" value="0" />
-        </label>
-        <label>Bison:
-          <input type="number" id="bison" value="0" />
-        </label>
-      </div>
-    </section>
+        <section>
+            <h2>Nahrung</h2>
+            <div class="input-group">
+                <label>Mais:
+                    <input type="number" id="mais" value="0" />
+                </label>
+                <label>Lachs:
+                    <input type="number" id="lachs" value="0" />
+                </label>
+                <label>Bison:
+                    <input type="number" id="bison" value="0" />
+                </label>
+            </div>
+        </section>
 
-    <section>
-      <h2>Gefangene</h2>
-      <label>
-        <input type="number" id="gefangene" value="0" />
-      </label>
-    </section>
+        <section>
+            <h2>Gefangene</h2>
+            <label>
+                <input type="number" id="gefangene" value="0" />
+            </label>
+        </section>
 
-    <section>
-      <h2>Totems</h2>
-        <div class="totems">
-            <div><input type="checkbox" class="totem" data-type="kundschafter" id="totem-list" /> <label for="totem-list">Totem der List (+2/Kundschafter)</label></div>
-            <div><input type="checkbox" class="totem" data-type="aeltester" id="totem-weisheit" /> <label for="totem-weisheit">Totem der Weisheit (+2/Ältester)</label></div>
-            <div><input type="checkbox" class="totem" data-type="schamane" id="totem-wissen" /> <label for="totem-wissen">Totem des Wissens (+2/Schamane)</label></div>
-            <div><input type="checkbox" class="totem" data-type="krieger" id="totem-macht" /> <label for="totem-macht">Totem der Macht (+2/Krieger)</label></div>
-            <div><input type="checkbox" class="totem" data-type="mais" id="totem-erde" /> <label for="totem-erde">Totem der Erde (+1/Mais)</label></div>
-            <div><input type="checkbox" class="totem" data-type="lachs" id="totem-wasser" /> <label for="totem-wasser">Totem des Wassers (+1/Lachs)</label></div>
-            <div><input type="checkbox" class="totem" data-type="bison" id="totem-weite" /> <label for="totem-weite">Totem der Weite (+2/Bison)</label></div>
-        </div>
+        <section>
+            <h2>Totems</h2>
+            <div class="totems">
+                <div><input type="checkbox" class="totem" data-type="kundschafter" id="totem-list" /> <label
+                        for="totem-list">Totem der List (+2/Kundschafter)</label></div>
+                <div><input type="checkbox" class="totem" data-type="aeltester" id="totem-weisheit" /> <label
+                        for="totem-weisheit">Totem der Weisheit (+2/Ältester)</label></div>
+                <div><input type="checkbox" class="totem" data-type="schamane" id="totem-wissen" /> <label
+                        for="totem-wissen">Totem des Wissens (+2/Schamane)</label></div>
+                <div><input type="checkbox" class="totem" data-type="krieger" id="totem-macht" /> <label
+                        for="totem-macht">Totem der Macht (+2/Krieger)</label></div>
+                <div><input type="checkbox" class="totem" data-type="mais" id="totem-erde" /> <label
+                        for="totem-erde">Totem der Erde (+1/Mais)</label></div>
+                <div><input type="checkbox" class="totem" data-type="lachs" id="totem-wasser" /> <label
+                        for="totem-wasser">Totem des Wassers (+1/Lachs)</label></div>
+                <div><input type="checkbox" class="totem" data-type="bison" id="totem-weite" /> <label
+                        for="totem-weite">Totem der Weite (+2/Bison)</label></div>
+            </div>
 
-      <h3>Totem-bezogene Figurenanzahl</h3>
-      <div class="input-group">
-        <label>Kundschafter: <input type="number" id="kundschafter" value="0" /></label>
-        <label>Älteste: <input type="number" id="aeltester" value="0" /></label>
-        <label>Schamanen: <input type="number" id="schamane" value="0" /></label>
-        <label>Krieger: <input type="number" id="krieger" value="0" /></label>
-      </div>
-    </section>
+            <h3>Totem-bezogene Figurenanzahl</h3>
+            <div class="input-group">
+                <label>Kundschafter: <input type="number" id="kundschafter" value="0" /></label>
+                <label>Älteste: <input type="number" id="aeltester" value="0" /></label>
+                <label>Schamanen: <input type="number" id="schamane" value="0" /></label>
+                <label>Krieger: <input type="number" id="krieger" value="0" /></label>
+            </div>
+        </section>
 
-    <!-- RITUALE -->
-    <section id="bereich-rituale" style="display: none;">
-    <h2>Rituale</h2>
-    <label>Zusatzpunkte durch Rituale (selbst berechnet):
-        <input type="number" id="rituale-punkte" value="0" />
-    </label>
-    </section>
+        <!-- RITUALE -->
+        <section id="bereich-rituale" style="display: none;">
+            <h2>Rituale</h2>
+            <label>Zusatzpunkte durch Rituale (selbst berechnet):
+                <input type="number" id="rituale-punkte" value="0" />
+            </label>
+        </section>
 
-    <!-- JAHRESZEITEN -->
-    <section id="bereich-jahreszeiten" style="display: none;">
-    <h2>Jahreszeiten <small>(in Arbeit)</small></h2>
-    <p>TODO: Weitere Regeln ergänzen</p>
-    <label>Anzahl Fluchkarten (–5 Punkte je Karte):
-        <input type="number" id="fluchkarten" value="0" disabled />
-    </label>
-    </section>
+        <!-- JAHRESZEITEN -->
+        <section id="bereich-jahreszeiten" style="display: none;">
+            <h2>Jahreszeiten <small>(in Arbeit)</small></h2>
+            <p>TODO: Weitere Regeln ergänzen</p>
+            <label>Anzahl Fluchkarten (–5 Punkte je Karte):
+                <input type="number" id="fluchkarten" value="0" disabled />
+            </label>
+        </section>
 
-    <!-- SEELE DER PRÄRIE -->
-    <section id="bereich-seele" style="display: none;">
-    <h2>Die Seele der Prärie <small>(in Arbeit)</small></h2>
-    <p>TODO</p>
-    </section>
+        <!-- SEELE DER PRÄRIE -->
+        <section id="bereich-seele" style="display: none;">
+            <h2>Die Seele der Prärie <small>(in Arbeit)</small></h2>
+            <p>TODO</p>
+        </section>
 
-    <button id="calculate-btn">Punkte berechnen</button>
-    <section>
-      <h2>Gesamtpunktzahl: <span id="ergebnis">0</span></h2>
-    </section>
-  </main>
+        <button id="calculate-btn">Punkte berechnen</button>
+        <section>
+            <h2>Gesamtpunktzahl: <span id="ergebnis">0</span></h2>
+        </section>
+    </main>
 
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
