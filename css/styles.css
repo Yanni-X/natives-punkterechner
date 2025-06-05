@@ -1,0 +1,102 @@
+body {
+  font-family: sans-serif;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fdfdfd;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+
+.totems {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.totems div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d99;
+}
+
+/* 1. Grundlegendes Layout für Eingabefelder */
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* 2. Labels mit Inputs besser lesbar machen */
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  flex: 1 1 150px;
+}
+
+/* 3. Eingabefelder besser anklickbar machen */
+input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* 4. Responsives Verhalten für kleine Bildschirme */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .totems div {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+}
