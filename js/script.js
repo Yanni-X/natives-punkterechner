@@ -62,6 +62,36 @@ document.addEventListener('DOMContentLoaded', () => {
       punkte += faktor * anzahl;
     });
 
+    // Erweiterung: Rituale
+    if (cbRituale.checked) {
+      const rituale = parseInt(document.getElementById('rituale-punkte').value) || 0;
+      punkte += rituale;
+    }
+
     document.getElementById('ergebnis').textContent = punkte;
   });
+
+  // Erweiterungen anzeigen/verstecken
+  const cbRituale = document.getElementById('erweiterung-rituale');
+  const bereichRituale = document.getElementById('bereich-rituale');
+  bereichRituale.style.display = cbRituale.checked ? 'block' : 'none'; // keep on reload
+  cbRituale.addEventListener('change', () => {
+    bereichRituale.style.display = cbRituale.checked ? 'block' : 'none';
+  });
+
+  const cbJahreszeiten = document.getElementById('erweiterung-jahreszeiten');
+  const bereichJahreszeiten = document.getElementById('bereich-jahreszeiten');
+  bereichJahreszeiten.style.display = cbJahreszeiten.checked ? 'block' : 'none'; // keep on reload
+  cbJahreszeiten.addEventListener('change', () => {
+    bereichJahreszeiten.style.display = cbJahreszeiten.checked ? 'block' : 'none';
+  });
+
+  const cbSeele = document.getElementById('erweiterung-seele');
+  const bereichSeele = document.getElementById('bereich-seele');
+  bereichSeele.style.display = cbSeele.checked ? 'block' : 'none'; // keep on reload
+  cbSeele.addEventListener('change', () => {
+    bereichSeele.style.display = cbSeele.checked ? 'block' : 'none';
+  });
+
+
 });

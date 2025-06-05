@@ -8,7 +8,24 @@
 <body>
   <main>
     <h1>Natives – Endpunktzahl-Rechner</h1>
+    <section>
+    <h2>Erweiterungen</h2>
+    <div class="erweiterungen">
+    <div class="checkbox-row">
+        <input type="checkbox" id="erweiterung-rituale" />
+        <label for="erweiterung-rituale">Rituale</label>
+    </div>
+    <div class="checkbox-row">
+        <input type="checkbox" id="erweiterung-jahreszeiten"  />
+        <label for="erweiterung-jahreszeiten">Jahreszeiten (demnächst)</label>
+    </div>
+    <div class="checkbox-row">
+        <input type="checkbox" id="erweiterung-seele"  />
+        <label for="erweiterung-seele">Die Seele der Prärie (demnächst)</label>
+    </div>
+    </div>
 
+    </section>
     <section>
       <h2>Stammesmitglieder</h2>
       <p>Bitte Punkte der Karten jeweils selbst zusammenrechnen.</p>
@@ -68,8 +85,30 @@
       </div>
     </section>
 
-    <button id="calculate-btn">Punkte berechnen</button>
+    <!-- RITUALE -->
+    <section id="bereich-rituale" style="display: none;">
+    <h2>Rituale</h2>
+    <label>Zusatzpunkte durch Rituale (selbst berechnet):
+        <input type="number" id="rituale-punkte" value="0" />
+    </label>
+    </section>
 
+    <!-- JAHRESZEITEN -->
+    <section id="bereich-jahreszeiten" style="display: none;">
+    <h2>Jahreszeiten <small>(in Arbeit)</small></h2>
+    <p>TODO: Weitere Regeln ergänzen</p>
+    <label>Anzahl Fluchkarten (–5 Punkte je Karte):
+        <input type="number" id="fluchkarten" value="0" disabled />
+    </label>
+    </section>
+
+    <!-- SEELE DER PRÄRIE -->
+    <section id="bereich-seele" style="display: none;">
+    <h2>Die Seele der Prärie <small>(in Arbeit)</small></h2>
+    <p>TODO</p>
+    </section>
+
+    <button id="calculate-btn">Punkte berechnen</button>
     <section>
       <h2>Gesamtpunktzahl: <span id="ergebnis">0</span></h2>
     </section>
