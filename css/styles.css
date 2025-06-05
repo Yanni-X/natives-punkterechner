@@ -128,3 +128,10 @@ section[style*="display: none"] {
     width: 1.2rem;
     height: 1.2rem;
 }
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
